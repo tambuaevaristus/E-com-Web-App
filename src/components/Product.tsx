@@ -8,11 +8,11 @@ interface Product {
 }
 
 export const Product: FC<Product> = (product) => {
-  const [quatity, setQuantity] = useState<string | null>("");
+  const [quatity, setQuantity] = useState<number | null>();
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuantity(event.target.value)
-  };
+//   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+//     setQuantity(event.target.value)
+//   };
 
   return (
     <div className="col-md-6 col-lg-4 my-4">
@@ -28,16 +28,11 @@ export const Product: FC<Product> = (product) => {
 
           <div>
             <h3>{product.price} frs</h3>
-            <button className="btn btn-primary">-</button>
+            <button className="btn btn-primary" onClick={()=>setQuantity(quatity+1)}>-</button>
             <span className="display-6">8</span>
-            <button className="btn btn-primary">+</button>
+            <button className="btn btn-primary" onClick={()=>setQuantity(quatity--)}>+</button>
           </div>
-
-          <input
-            type="text"
-            placeholder="Enter price"
-            onChange={handleChange}
-          />
+ 
           <p>{quatity}</p>
         </div>
       </div>
