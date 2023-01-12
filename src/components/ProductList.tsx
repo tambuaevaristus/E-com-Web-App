@@ -1,10 +1,8 @@
 import React from "react";
-import Product from "./Product";
+import {Product} from "./Product";
 
 
-
-
-export default function ProductList() {
+export const ProductList = ()=>{
   return (
     <div className="row container">
       <Product

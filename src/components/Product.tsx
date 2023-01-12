@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 
-interface Person {
-    name?: string;
-    price?:number;
-    description?:string;
-    qty?:number;
+interface Product {
+  name?: string;
+  price?: number;
+  description?: string;
+  qty?: number;
 }
 
-export default function Product(person : Person) {
-  
-    
+export const Product: FC<Product> = (product) => {
+  const [quatity, setQuantity] = useState<string | null>("");
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuantity(event.target.value)
+  };
+
   return (
     <div className="col-md-6 col-lg-4 my-4">
       <div className="card ">
@@ -19,25 +23,24 @@ export default function Product(person : Person) {
           alt="..."
         />
         <div className="card-body">
-          <h5 className="card-title">{person.name}</h5>
-          <p className="card-text">
-            {person.description}
-          </p>
-          
-          <div>
+          <h5 className="card-title">{product.name}</h5>
+          <p className="card-text">{product.description}</p>
 
-            <h3>{person.price} frs</h3>
-          <button className="btn btn-primary">
-            -
-          </button>
-          <span className="display-6">8</span>
-          <button className="btn btn-primary">
-            +
-          </button>
+          <div>
+            <h3>{product.price} frs</h3>
+            <button className="btn btn-primary">-</button>
+            <span className="display-6">8</span>
+            <button className="btn btn-primary">+</button>
           </div>
 
+          <input
+            type="text"
+            placeholder="Enter price"
+            onChange={handleChange}
+          />
+          <p>{quatity}</p>
         </div>
       </div>
     </div>
   );
-}
+};
