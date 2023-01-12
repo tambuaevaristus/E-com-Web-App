@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [total, setTotal] = useState(5);
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -40,11 +42,9 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-
       </div>
 
-      <span className="badge text-white bg-black ">3</span>
-
+      <span className="badge text-white bg-black ">{total}</span>
     </nav>
   );
 }
