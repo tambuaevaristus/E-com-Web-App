@@ -8,7 +8,7 @@ interface Product {
 }
 
 export const Product: FC<Product> = (product) => {
-  const [quatity, setQuantity] = useState<number | null>();
+  const [quatity, setQuantity] = useState<number>(0);
 
 
   return (
@@ -27,7 +27,7 @@ export const Product: FC<Product> = (product) => {
             <h3>{product.price} frs</h3>
             <button
               className="btn btn-primary"
-            //   onClick={() => setQuantity(quatity + 1)}
+            //   onClick={setQuantity(quatity + 1)}
             >
               -
             </button>
