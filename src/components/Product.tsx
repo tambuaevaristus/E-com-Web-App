@@ -8,8 +8,17 @@ interface Product {
 }
 
 export const Product: FC<Product> = (product) => {
-  const [quatity, setQuantity] = useState<number>(0);
+  let [quatity, setQuantity] = useState<number>(0);
 
+  const handleCountUp = () => {
+    setQuantity(quatity + 1);
+  };
+
+  const handleCountDown = () => {
+    if(quatity>0){
+        setQuantity(quatity - 1);
+    }
+  };
 
   return (
     <div className="col-md-6 col-lg-4 my-4">
@@ -27,20 +36,17 @@ export const Product: FC<Product> = (product) => {
             <h3>{product.price} frs</h3>
             <button
               className="btn btn-primary"
-            //   onClick={setQuantity(quatity + 1)}
+                onClick={handleCountDown}
             >
               -
             </button>
-            <span className="display-6">8</span>
-            <button
-              className="btn btn-primary"
-            //   onClick={() => setQuantity(quatity--)}
-            >
+            <span className="display-6">{quatity}</span>
+            <button className="btn btn-primary" onClick={handleCountUp}>
               +
             </button>
           </div>
 
-          <p>{quatity}</p>
+          {/* <p>{quatity}</p> */}
         </div>
       </div>
     </div>
