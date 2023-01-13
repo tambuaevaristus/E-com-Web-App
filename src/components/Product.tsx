@@ -2,9 +2,11 @@ import React, { FC, useState } from "react";
 
 interface Product {
   name?: string;
-  price?: number;
+  price?: number | string;
   description?: string;
   qty?: number;
+  total: number;
+  setTotal: React.Dispatch<React.SetStateAction<number>>
 }
 
 export const Product: FC<Product> = (product) => {
@@ -12,11 +14,14 @@ export const Product: FC<Product> = (product) => {
 
   const handleCountUp = () => {
     setQuantity(quatity + 1);
+    product.setTotal(product.total+1)
   };
 
   const handleCountDown = () => {
     if(quatity>0){
         setQuantity(quatity - 1);
+        product.setTotal(product.total-1)
+
     }
   };
 

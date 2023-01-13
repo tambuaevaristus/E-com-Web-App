@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
-export default function Navbar() {
-  const [total, setTotal] = useState(5);
+interface Props {
+  totalQuantity: number;
+}
+
+export default function Navbar(props: Props) {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -43,8 +46,11 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-
-      <span className="badge text-white bg-black ">{total}</span>
+      <a href="/payment">
+        <span className="badge text-white bg-black ">
+          {props.totalQuantity}
+        </span>
+      </a>
     </nav>
   );
 }

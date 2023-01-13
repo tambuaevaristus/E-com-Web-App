@@ -1,9 +1,7 @@
-import React from "react";
-import { Product } from "../components/Product";
-
- const data = [
+ {
+  "data": [
     {
-      "title": "",
+      "title": "computer",
       "price": "$5,332",
       "description": "odio vel est tempor bibendum. Donec felis orci, adipiscing"
     },
@@ -103,28 +101,4 @@ import { Product } from "../components/Product";
       "description": "risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
     }
   ]
-
-
-
-interface Props {
-  setTotalQuantity: React.Dispatch<React.SetStateAction<number>>;
-  total: number;
 }
-
-export const ProductList = (props: Props) => {
-  return (
-    <div className="row container">
-      
-{
-  data.map((item, index) =><><Product
-        name="laptop"
-        price={item.price}
-        description={item.description}
-        setTotal={props.setTotalQuantity}
-        total={props.total}
-      /></>)
-}
-
-    </div>
-  );
-};
