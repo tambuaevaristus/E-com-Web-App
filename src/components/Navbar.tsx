@@ -39,7 +39,7 @@ export default function Navbar(props: Props) {
         </div>
       </div>
 
-      {/* overall quatntity */}
+      {/*  */}
       <a href="/payment">
         <span className="badge text-white bg-black ">
           {props.totalQuantity}
