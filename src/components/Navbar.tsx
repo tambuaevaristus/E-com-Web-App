@@ -5,7 +5,6 @@ interface Props {
 }
 
 export default function Navbar(props: Props) {
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -35,14 +34,7 @@ export default function Navbar(props: Props) {
                 Features
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/pricing">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
-            </li>
+           
           </ul>
         </div>
       </div>
