@@ -15,7 +15,7 @@ export const Payment = () => {
             Card link
           </a>
           <a href="#" className="card-link">
-            Another link
+            Another link WE are boot aware ppayments cant go through
           </a>
         </div>
       </div>
