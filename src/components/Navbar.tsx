@@ -30,8 +30,13 @@ export default function Navbar(props: Props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/features">
-                Features
+              <a className="nav-link" href="/payment">
+                Payment
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/todo">
+                Todo
               </a>
             </li>
            

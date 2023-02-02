@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { Product } from "./components/Product";
 import { Payment } from "./pages/Payment";
 import { ProductList } from "./pages/ProductList";
+import Todo from "./pages/Todo";
 import { User } from "./pages/User";
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
         <Route
           path="/payment"
           element={<Payment />}
+        />
+        <Route
+          path="/todo"
+          element={<Todo />}
         />
       </Routes>
     </div>
