@@ -11,7 +11,7 @@ export const Payment = () => {
             Some quick exame dong bad ple text to build on the card 
           </p>
           <a href="#" className="card-link">
-            Card linkbbb
+            Card
           </a>
           <a href="#" className="card-link">
             Another link WE are boot aware ppayments cant go through
