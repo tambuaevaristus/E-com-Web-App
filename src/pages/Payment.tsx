@@ -8,7 +8,7 @@ export const Payment = () => {
           <h5 className="card-title">Payment</h5>
           <h6 className="card-subtitle mb-2 text-muted"></h6>
           <p className="card-text">
-            Some quick exame dong bad ple text to build on the card 
+            Some quick exame dong  n the card 
           </p>
           <a href="#" className="card-link">
             Card
