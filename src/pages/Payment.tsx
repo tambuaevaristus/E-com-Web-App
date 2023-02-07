@@ -14,7 +14,7 @@ export const Payment = () => {
             Card
           </a>
           <a href="#" className="card-link">
-            Another link WE are
+            Another link WE areiiiiii
           </a>
         </div>
       </div>
