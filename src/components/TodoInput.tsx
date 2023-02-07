@@ -1,6 +1,27 @@
 import React from "react";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../firebaseConfig";
 
 export const TodoInput = () => {
+  const userRef = collection(db, "user");
+  const saveData = async () => {
+    try {
+      const docRef = await addDoc(userRef, {
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+
+  const doc = getDocs(userRef);
+
+  console.log( "document", doc);
+
+  saveData()
   return (
     <div>
       <div className="w-full max-w-sm">
