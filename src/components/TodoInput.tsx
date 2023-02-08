@@ -32,7 +32,7 @@ export const TodoInput = () => {
             className=" bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
             onChange={(e) => setText(e.target.value)}
-            placeholder="Jane Doe"
+            placeholder="Tambua"
             aria-label="Full name"
           />
           <button
