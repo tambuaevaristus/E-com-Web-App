@@ -13,7 +13,6 @@ export const TodoInput = () => {
   };
 
   const addTodo = async () => {
-    console.log("in todosss");
     try {
       const docRef = await addDoc(todoRef, data);
 
