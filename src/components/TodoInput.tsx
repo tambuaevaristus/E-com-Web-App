@@ -13,6 +13,7 @@ export const TodoInput = () => {
   };
 
   const addTodo = async () => {
+    console.log("in todosss");
     try {
       const docRef = await addDoc(todoRef, data);
 
@@ -39,7 +40,7 @@ export const TodoInput = () => {
             type="button"
             onClick={addTodo}
           >
-            Add item
+            Add item To TaskList...
           </button>
           <button
             className="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded"
