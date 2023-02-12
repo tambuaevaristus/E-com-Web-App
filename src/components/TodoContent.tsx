@@ -11,28 +11,25 @@ import { Task } from "./Task";
 export const TodoContent = () => {
   const q = collection(db, "todos");
   const [todoItems, setTodoItems] = useState<any>();
+  const todos: any = [];
 
   const getData = async () => {
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       // console.log(doc.id, " => ", doc.data());
+      todos.push(doc.data());
     });
     setTodoItems(querySnapshot.docs);
-    console.log("This are todo items  =>", todoItems)
-
-    
-
   };
 
 
-  console.log(todoItems);
-
   getData();
+  console.log(todos);
+
   return (
     <div>
-      {todoItems.map(() => {
-        // console.log(doc.id, " => ", doc.data())
-        <Task key={doc.id} text="The first todo item" status={true} />;
+      {todos.map((todo: any, key: any) => {
+        <Task key={key} text="The first todo item" status={true} />;
       })}
     </div>
   );
