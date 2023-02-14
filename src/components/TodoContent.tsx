@@ -29,7 +29,7 @@ export const TodoContent = () => {
   return (
     <div>
       {todos.map((todo: any, key: any) => {
-        <Task key={key} text="The first todo item in todo" status={true} />;
+        <Task key={key} text="The first todo item in todo toddd hais" status={true} />;
       })}
     </div>
   );
