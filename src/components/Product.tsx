@@ -38,7 +38,7 @@ export const Product: FC<Product> = (product) => {
           <p className="card-text">{product.description}</p>
 
           <div>
-            <h3>{product.price} frs</h3>
+            <h3>{product.price} frs CFA</h3>
             <button
               className="btn btn-primary"
                 onClick={handleCountDown}
