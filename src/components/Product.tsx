@@ -31,7 +31,7 @@ export const Product: FC<Product> = (product) => {
         <img
           src="https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer-1.jpg"
           className="card-img-top"
-          alt="..."
+          // alt="..."
         />
         <div className="card-body">
           <h5 className="card-title">{product.name}</h5>
