@@ -50,8 +50,7 @@ export const Product: FC<Product> = (product) => {
               +
             </button>
           </div>
-{/* resent */}
-          {/* <p>{quatity}</p> */}
+
         </div>
       </div>
     </div>
