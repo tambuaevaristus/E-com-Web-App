@@ -13,7 +13,14 @@ const firebaseConfig = {
   messagingSenderId: "934609200594",
   appId: "1:934609200594:web:daf4ec5171c189f69cd40b",
 };
-
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBtN2AIiLrcDlTsxHI65LVAWx4uErE1xx4",
+//   authDomain: "todo-208e5.firebaseapp.com",
+//   projectId: "todo-208e5",
+//   storageBucket: "todo-208e5.appspot.com",
+//   messagingSenderId: "934609200594",
+//   appId: "1:934609200594:web:daf4ec5171c189f69cd40b",
+// };
 // Initialize Firebase apppp
 export const app = initializeApp(firebaseConfig);
 
