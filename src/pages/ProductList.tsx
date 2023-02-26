@@ -101,6 +101,24 @@ import { Product } from "../components/Product";
       "title": "",
       "price": "$6,956",
       "description": "risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+    }   {
+      "title": "",
+      "price": "$9,752",
+      "description": "Lorem"
+    },
+    {
+      "title": "",
+      "price": "$6,956",
+      "description": "risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+    }   {
+      "title": "",
+      "price": "$9,752",
+      "description": "Lorem"
+    },
+    {
+      "title": "",
+      "price": "$6,956",
+      "description": "risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
     }
   ]
 
