@@ -113,93 +113,10 @@ import { Product } from "../components/Product";
     },
     {
       "title": "",
-      "price": "$7,442",
-      "description": "iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et"
-    },
-    {
-      "title": "",
-      "price": "$5,353",
-      "description": "adipiscing,"
-    },
-    {
-      "title": "",
-      "price": "$6,788",
-      "description": "nulla vulputate dui,"
-    },
-    {
-      "title": "",
-      "price": "$5,833",
-      "description": "Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper"
-    },
-    {
-      "title": "",
-      "price": "$9,649",
-      "description": "ultrices a, auctor non, feugiat nec, diam."
-    },  {
-      "title": "",
-      "price": "$8,195",
-      "description": "fermentum vel, mauris. Integer"
-    },
-    {
-      "title": "",
-      "price": "$7,914",
-      "description": "nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis"
-    },
-    {
-      "title": "",
-      "price": "$5,460",
-      "description": "Quisque libero lacus, varius et, euismod"
-    },
-    {
-      "title": "",
-      "price": "$7,266",
-      "description": "lorem ut aliquam iaculis, lacus pede sagittis augue, eu tempor erat neque"
-    },
-    {
-      "title": "",
-      "price": "$8,143",
-      "description": "Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies ligula."
-    },
-    {
-      "title": "",
-      "price": "$8,144",
-      "description": "scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis"
-    },
-    {
-      "title": "",
-      "price": "$7,355",
-      "description": "natoque penatibus et magnis dis parturient montes,"
-    },
-    {
-      "title": "",
-      "price": "$7,442",
-      "description": "iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et"
-    },
-    {
-      "title": "",
-      "price": "$5,353",
-      "description": "adipiscing,"
-    },
-    {
-      "title": "",
-      "price": "$6,788",
-      "description": "nulla vulputate dui,"
-    },
-    {
-      "title": "",
-      "price": "$5,833",
-      "description": "Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper"
-    },
-    {
-      "title": "",
       "price": "$9,649",
       "description": "ultrices a, auctor non, feugiat nec, diam."
     },
-    {
-      "title": "",
-      "price": "$6,382",
-      "description": "ornare lectus justo eu arcu. Morbi sit amet massa. Quisque porttitor eros nec"
-    },
+    
     {
       "title": "",
       "price": "$5,681",
