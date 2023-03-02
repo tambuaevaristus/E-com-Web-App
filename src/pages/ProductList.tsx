@@ -106,17 +106,7 @@ import { Product } from "../components/Product";
       "price": "$8,144",
       "description": "scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis"
     },
-    {
-      "title": "",
-      "price": "$7,355",
-      "description": "natoque penatibus et magnis dis parturient montes,"
-    },
-    {
-      "title": "",
-      "price": "$9,649",
-      "description": "ultrices a, auctor non, feugiat nec, diam."
-    },
-    
+  
     {
       "title": "",
       "price": "$5,681",
