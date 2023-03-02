@@ -39,6 +39,11 @@ export default function Navbar(props: Props) {
                 Todo
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/create">
+                Create Product
+              </a>
+            </li>
            
           </ul>
         </div>

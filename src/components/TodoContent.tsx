@@ -2,35 +2,35 @@ import {
   collection,
   DocumentData,
   getDocs,
+  QueryDocumentSnapshot,
   QuerySnapshot,
 } from "firebase/firestore";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { db } from "../firebaseConfig";
 import { Task } from "./Task";
 
 export const TodoContent = () => {
-  const q = collection(db, "todos");
-  const [todoItems, setTodoItems] = useState<any>();
-  const todos: any = [];
+  const todoRef = collection(db, "todos");
+  const todoItems = [{}];
+  const [todos, setTodos] = useState(todoItems);
 
-  const getData = async () => {
-    const querySnapshot = await getDocs(q);
-    querySnapshot.forEach((doc) => {
-      // console.log(doc.id, " => ", doc.data());
-      todos.push(doc.data());
+  const getTodos = async () => {
+    const querySnapshot = await getDocs(todoRef);
+    await querySnapshot.forEach((doc: any) => {
+      todoItems.push(doc.data());
     });
-    setTodoItems(querySnapshot.docs);
+
+    console.log(todoItems);
   };
 
-
-  getData();
-  console.log(todos);
-
+  useEffect(() => {
+    getTodos();
+  }, []);
   return (
     <div>
-      {todos.map((todo: any, key: any) => {
-        <Task key={key} text="The first todo item io toddd hais" status={true} />;
-      })}
+      {todos.map((todo: any, key: any) => (
+        <Task key={key} text={todo.text} status={true} />
+      ))}
     </div>
   );
 };
