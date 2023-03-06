@@ -20,7 +20,7 @@ export const TodoContent = () => {
       todoItems.push(doc.data());
     });
 
-    console.log(todoItems);
+    // console.log(todoItems);
   };
 
   useEffect(() => {
