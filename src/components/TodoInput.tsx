@@ -19,7 +19,17 @@ export const TodoInput = () => {
 
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
-      console.error("Error adding document: ", e);
+      console.error("Error ,adding document: ", e);
+    }
+  };
+  const add = async () => {
+    console.log("in todosss");
+    try {
+      const docRef = await addDoc(todoRef, data);
+
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error ,adding document: ", e);
     }
   };
 
