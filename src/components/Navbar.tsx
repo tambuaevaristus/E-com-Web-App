@@ -9,7 +9,7 @@ export default function Navbar(props: Props) {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Navbar
+          NKAP
         </a>
         <button
           className="navbar-toggler"
