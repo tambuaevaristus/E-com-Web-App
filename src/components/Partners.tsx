@@ -8,8 +8,7 @@ function Partners() {
         <li>Afro Vision</li>
         <li>Afro Vision</li>
         <li>Afro Vision</li>
-        <li>Afro Vision</li>
-        <li>Afro Vision</li>
+    
       </ul>
     </div>
   );
