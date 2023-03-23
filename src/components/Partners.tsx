@@ -4,11 +4,12 @@ function Partners() {
   return (
     <div>
       <h2>Partners</h2>
-      <ul className="flex flex-row">
+      <ul className="flex ">
         <li>Afro Vision</li>
         <li>Afro Vision</li>
         <li>Afro Vision</li>
-    
+        <li>Afro Vision</li>
+        <li>Afro Vision</li>
       </ul>
     </div>
   );
