@@ -7,9 +7,6 @@ function Partners() {
       <ul className="flex ">
         <li>Afro Vision</li>
         <li>Afro Vision</li>
-        <li>Afro Vision</li>
-        <li>Afro Vision</li>
-        <li>Afro Vision</li>
       </ul>
     </div>
   );
